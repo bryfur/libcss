@@ -72,7 +72,7 @@ css_error css__parse_speak_punctuation(css_language *c,
 				CSS_PROP_SPEAK_PUNCTUATION);
 
 	} else if ((lwc_string_caseless_isequal(
-			token->idata, c->strings[CODE],
+			token->idata, c->strings[CODE_],
 			&match) == lwc_error_ok && match)) {
 		error = css__stylesheet_style_appendOPV(result,
 				CSS_PROP_SPEAK_PUNCTUATION,

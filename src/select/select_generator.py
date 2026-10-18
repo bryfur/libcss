@@ -719,7 +719,7 @@ class CSSGroup:
 
     def print_destroy(self, t, p):
         if p.has_calc:
-            t.append("set_{}(style, 0, (css_fixed_or_calc)0, CSS_UNIT_PX);".format(p.name))
+            t.append("set_{}(style, 0, (css_fixed_or_calc)(css_fixed)0, CSS_UNIT_PX);".format(p.name))
         else:
             t.append("/* set_{}(style, 0, 0, CSS_UNIT_PX); */".format(p.name))
 

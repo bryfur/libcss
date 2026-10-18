@@ -232,7 +232,7 @@ css_error css__cascade_length_auto_calc(uint32_t opv, css_style *style,
 				css_unit))
 {
 	uint16_t value = CSS_BOTTOM_INHERIT;
-	css_fixed_or_calc length = (css_fixed_or_calc)0;
+	css_fixed_or_calc length = (css_fixed_or_calc)(css_fixed)0;
 	uint32_t unit = CSS_UNIT_PX;
 	uint32_t snum = 0;
 
